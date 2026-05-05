@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Covered Call Finder</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    button { padding: 10px 15px; cursor: pointer; }
+    .highlight { background: #fff3cd; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h1>Best Covered Call Stocks (Yahoo Data)</h1>
+<p>Shows best call option based on highest bid premium.</p>
+
+<button onclick="loadData()">Refresh</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Stock Price</th>
+      <th>Expiration Date</th>
+      <th>Strike Price</th>
+      <th>Bid Premium</th>
+      <th>Volume</th>
+      <th>Open Interest</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
